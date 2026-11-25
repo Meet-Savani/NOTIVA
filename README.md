@@ -38,9 +38,9 @@ NOTIVA includes an admin panel that allows administrators to manage and monitor 
 
 | Application View | Screenshot |
 |---|---|
-| Home Page | `screenshots/homepage.png` |
-| Notes Dashboard | `screenshots/dashboard.png` |
-| Create Note Page | `screenshots/create-note.png` |
+| Home Page | ![Home Page](./screenshots/homepage.png) |
+| Notes Dashboard | ![Dashboard](./screenshots/dashboard.png) |
+| Create Note Page | ![Create Note](./screenshots/create-note.png) |
 
 ---
 
