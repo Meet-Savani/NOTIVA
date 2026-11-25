@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    html {
+        font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+        letter-spacing: -0.011em;
+    }
+    body {
+        @apply bg-[#fafafa] dark:bg-[#0b0f19] text-slate-800 dark:text-slate-100 transition-colors duration-200;
+        overflow-x: hidden;
+        font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        letter-spacing: -0.025em;
+    }
+
+    /* Custom subtle scrollbar */
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 9999px;
+    }
+    .dark ::-webkit-scrollbar-thumb {
+        background: #334155;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+    }
+    .dark ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+    }
+
+    /* Browser Autofill / Autocomplete Styling Consistency */
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover, 
+    input:-webkit-autofill:focus, 
+    input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+        -webkit-text-fill-color: #0f172a !important;
+        caret-color: #0f172a !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .dark input:-webkit-autofill,
+    .dark input:-webkit-autofill:hover, 
+    .dark input:-webkit-autofill:focus, 
+    .dark input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px #1e293b inset !important;
+        -webkit-text-fill-color: #f8fafc !important;
+        caret-color: #f8fafc !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+
+    .dark-portal input:-webkit-autofill,
+    .dark-portal input:-webkit-autofill:hover,
+    .dark-portal input:-webkit-autofill:focus,
+    .dark-portal input:-webkit-autofill:active {
+        -webkit-box-shadow: 0 0 0 1000px #0f172a inset !important;
+        -webkit-text-fill-color: #f8fafc !important;
+        caret-color: #f8fafc !important;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
+
+@layer components {
+    .input-box {
+        @apply w-full text-[13.5px] bg-white dark:bg-slate-800/90 border border-slate-200/90 dark:border-slate-700 px-3.5 py-2.5 rounded-xl mb-3.5 outline-none transition-all duration-200 focus:border-teal-600 focus:ring-2 focus:ring-teal-600/10 placeholder:text-slate-400 dark:placeholder:text-slate-500 placeholder:font-normal text-slate-800 dark:text-slate-100;
+    }
+    .btn-primary {
+        @apply w-full text-[13.5px] bg-teal-600 text-white py-2.5 px-4 rounded-xl my-1 font-medium tracking-wide hover:bg-teal-700 transition-all duration-200 shadow-sm hover:shadow-md hover:shadow-teal-600/20 active:scale-[0.99];
+    }
+    .icon-btn {
+        @apply text-lg text-slate-400 cursor-pointer hover:text-teal-600 transition-colors;
+    }
+    .input-label {
+        @apply text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1.5 block tracking-wider uppercase;
+    }
+}

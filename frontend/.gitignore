@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production & Build Output
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment Variables & Secrets (CRITICAL)
+.env
+.env.*
+*.env
+!.env.example
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.staging.local
+*.pem
+*.key
+*.cert
+*.crt
+
+# Logs & Debugging
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches & Diagnostics
+.eslintcache
+.stylelintcache
+.vite/
+.parcel-cache/
+.turbo/
+
+# Testing & Coverage
+coverage/
+
+# IDEs & Editor Configuration
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.sublime-workspace
+*.sublime-project
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
